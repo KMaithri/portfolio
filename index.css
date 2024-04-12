@@ -24,6 +24,7 @@ hr{
 .container-center{
     max-width: 600px;
     margin: auto;
+    text-align: center;
 }
 
 /* links */
@@ -37,9 +38,19 @@ hr{
     color: white;
  }
 
+ .link-primary:hover{
+    box-shadow: 10px 5px 5px black;
+    font-weight: bold;
+ }
+
  .link-secondary{
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    margin-left: 2rem;
+ }
+ .link-secondary:hover{
+    box-shadow: 10px 5px 5px var(--primary-color);
+    font-weight: bold;
  }
 
  /* lists */
@@ -68,12 +79,19 @@ hr{
 .navigation .nav-pills{
     text-align: right;
 }
+
  .navigation .link{
     color: white;
     
  }
+ .navigation .link:hover{
+    color: black;
+    /* font-weight: bold; */
+    
+ }
  .navigation .link-active{
     font-weight: bold;
+    color: black;
  }
 
 /* header */
@@ -111,6 +129,10 @@ hr{
     background-color: var(--off-white);
 }
 
+.space{
+    margin-top: 3rem;
+}
+
 /* footer */
 
 .footer{
@@ -120,14 +142,24 @@ hr{
     color: white;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    margin-top: 2rem;
 }
 
+.footer .footer-heading{
+    font-weight: bold;
+    font-size: large;
+}
 .footer .link{
     color: white;
 }
 
 .footer ul{
     padding-inline-start: 0px;
+}
+
+.footer .social-link{
+    width: 24px;
+    height: 24px;
 }
 
 
