@@ -101,15 +101,44 @@ hr{
     color: black;
  }
 
+ /* .navigation .mode{
+    text-align: right;
+ } */
+  @keyframes bounce {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+  }
+ .navigation .mode{
+    text-align: right;
+    animation: bounce 2s infinite;
+ } 
+ .icon{
+    width: 28px;
+    height: 28px;
+ }
+
+
 /* header */
 .hero{
     padding: 2rem;;
+}
+@keyframes hero {
+    0%, 100% {top:0px;left : 0px;}
+    50% {top:0px;left: 100px;}
 }
 
 .hero .hero-img{
     max-width: 350px;
     display: block;
     margin: auto;
+    position: relative;
+    animation-name: hero;
+    animation-duration: 5s;
+    animation-delay: 2s;
 }
 
 .hero .hero-heading{
@@ -121,6 +150,42 @@ hr{
 .heading-inverted{
     color: var(--primary-color);
 }
+
+/* resume download button at hero section */
+.hero .resume{
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    background-color: #d7004b;
+    color: white;
+    border: none;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.hero .resume:hover{
+    background-color: #990136; 
+}
+.hero .icon{
+    width: 24px;
+    height: 24px;
+}
+.hero .mode{
+    text-align: center;
+}
+/* .animate{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation: box 5s infinite;
+}
+@keyframes box {
+    0%,100%  {top: 0px;left: 0px;background-color: red;}
+    25% {top: 0px; left: 100px;background-color: green;}
+    50% {top:100px;left:100px;background-color: blue;}
+    75% {top:100px;left:0px;background-color: yellow;}
+    
+} */
 
 /* sections */
 
@@ -168,6 +233,8 @@ hr{
     width: 24px;
     height: 24px;
 }
+
+
 
 
 
