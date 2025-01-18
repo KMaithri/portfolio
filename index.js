@@ -1,8 +1,8 @@
 // Toggle modes
 function myfunction(){
     // console.log("before: "+document.getElementById("mode").src);
-    if(document.querySelector(".icon").src == "file:///D:/Desktop/portfolio/images/darkmode.png"){
-        document.querySelector(".icon").src = "file:///D:/Desktop/portfolio/images/lightmode.png";
+    if(document.querySelector(".icon").src == "https://maithrikarasodi.netlify.app/images/darkmode.png"){
+        document.querySelector(".icon").src = "https://maithrikarasodi.netlify.app/images/lightmode.png";
         // console.log("after: "+document.getElementById("mode").src);
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
@@ -12,7 +12,7 @@ function myfunction(){
                 nodeList[i].style.color = "white";
             }
     }else{
-        document.querySelector(".icon").src = "file:///D:/Desktop/portfolio/images/darkmode.png";
+        document.querySelector(".icon").src = "https://maithrikarasodi.netlify.app/images/darkmode.png";
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
         const nodeList = document.querySelectorAll(".ow");
