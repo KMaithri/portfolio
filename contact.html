@@ -8,27 +8,21 @@
     <link rel="stylesheet" href="index.css">
     <title>Contact | Maithri</title>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#header').load("header.html");
+            $('#footer').load('footer.html');
+        });
+        
+    </script>
 </head>
 
 <body>
-     <!-- nav -->
-     <nav class="navigation container">
-        <div class="nav-brand">
-            <a class="link" href="index.html">MK</a>            
-            
-        </div>
-        <div class="mode">
-            <img class = "icon" onclick="myfunction()"  src="images/darkmode.png" alt="mode">
-          
-        </div>
+     <!-- NAV -->
+    <div id="header" ></div>
 
-        <ul class="list-non-bullet nav-pills">
-            <li class=" list-item-inline"><a class="link " href="index.html">home</a></li>
-            <li class="list-item-inline"><a class="link" href="projects.html">projects</a></li>
-            <li class=" list-item-inline"><a class="link " href="designs.html">designs</a></li>
-            <li class=" list-item-inline"><a class="link link-active" href="contact.html">contact</a></li>
-        </ul>
-    </nav>
     <!-- header -->
     <header class="hero">
         <h1 class="hero-heading">Contact<span class="heading-inverted"> Me</span> </h1>
@@ -39,25 +33,9 @@
         <iframe id="contact" src="https://docs.google.com/forms/d/e/1FAIpQLSfvYWKe8MbwYLEKdhd-nA2P4b-C5rXndEJq3V9ZZHuourt7cw/viewform?embedded=true" width="640" height="821" frameborder="1" marginheight="0" marginwidth="0">Loading…</iframe>
 
      </div>
-
-      <!-- footer -->
-    <footer class="footer">
-        <div class="footer-heading">Social media presence</div>
-        <ul class="list-non-bullet">
-            <li class="list-item-inline"><a class="link" target="_blank" href="https://github.com/KMaithri"><img
-                        class="social-link" src="images/github.png" alt="github"></a></li>
-            <li class="list-item-inline"><a class="link" target="_blank"
-                    href="https://www.linkedin.com/in/maithri-k-0287041a2/"><img class="social-link"
-                        src="images/linkedin.png" alt="linkedin"></a></li>
-            <li class="list-item-inline"><a class="link" target="_blank"
-                    href="https://www.instagram.com/follo_wyourart/"><img class="social-link"
-                        src="images/instagram.png" alt="instagram"></a></li>
-            <li class="list-item-inline"><a class="link" target="_blank" href="https://www.behance.net/maithrik"><img
-                        class="social-link" src="images/behance.png" alt="behance"></a></li>
-
-        </ul>
-        <p>© <strong>Maithri Karasodi</strong> 2025. All Rights Reserved.</p>
-    </footer>
+     
+ <!-- FOOTER -->
+     <div id="footer"></div>
 
 </body>
 </html>

@@ -6,27 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#header').load("header.html");
+            $('#footer').load('footer.html');
+        });
+        
+    </script>
     <title>Projects | Maithri</title>
 </head>
 
 <body>
-    <!-- nav -->
-    <nav class="navigation container">
-        <div class="nav-brand">
-            <a class="link" href="index.html">MK</a>            
-            
-        </div>
-        <div class="mode">
-            <img class = "icon" onclick="myfunction()"  src="images/darkmode.png" alt="mode">
-          
-        </div>
-        <ul class="list-non-bullet nav-pills">
-            <li class=" list-item-inline"><a class="link " href="index.html">home</a></li>
-            <li class="list-item-inline"><a class="link link-active" href="projects.html">projects</a></li>
-            <li class=" list-item-inline"><a class="link" href="designs.html">designs</a></li>
-            <li class=" list-item-inline"><a class="link" href="contact.html">contact</a></li>
-        </ul>
-    </nav>
+    <!-- NAV -->
+    <div id="header" ></div>
     <!-- header -->
     <header class="hero">
         <h1 class="hero-heading">See my<span class="heading-inverted"> Code.</span> </h1>
@@ -115,26 +109,10 @@
             </div>
         </li>
     </ul>
-    
-<!-- footer -->
-    <footer class="footer">
-        <div class="footer-heading">Social media presence</div>
-        <ul class="list-non-bullet">
-            <li class="list-item-inline"><a class="link" target="_blank" href="https://github.com/KMaithri"><img
-                        class="social-link" src="images/github.png" alt="github"></a></li>
-            <li class="list-item-inline"><a class="link" target="_blank"
-                    href="https://www.linkedin.com/in/maithri-k-0287041a2/"><img class="social-link"
-                        src="images/linkedin.png" alt="linkedin"></a></li>
-            <li class="list-item-inline"><a class="link" target="_blank"
-                    href="https://www.instagram.com/follo_wyourart/"><img class="social-link"
-                        src="images/instagram.png" alt="instagram"></a></li>
-            <li class="list-item-inline"><a class="link" target="_blank"
-                    href="https://www.behance.net/maithrik"><img class="social-link"
-                        src="images/behance.png" alt="behance"></a></li>
 
-        </ul>
-        <p>© <strong>Maithri Karasodi</strong> 2025. All Rights Reserved.</p>
-    </footer>
+ <!-- FOOTER -->
+ <div id="footer"></div>
+
 </body>
 
 </html>
