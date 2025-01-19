@@ -73,6 +73,8 @@ hr{
  /* navigation */
 
  .navigation{
+    position:sticky;
+    top:0;
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
@@ -204,6 +206,10 @@ hr{
 .space{
     margin-top: 3rem;
 }
+/* contact */
+.contact {
+    text-align: center;
+}
 
 /* footer */
 
@@ -232,6 +238,11 @@ hr{
 .footer .social-link{
     width: 24px;
     height: 24px;
+}
+
+.footer p{
+    text-align: right;
+    font-size: x-small;
 }
 
 
