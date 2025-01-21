@@ -25,24 +25,24 @@ function myfunction(){
 }
 
 // typewriter effect for title
-var textElement = document.querySelector(".hero-heading");
-console.log( document.querySelector(".hero-heading"));
-const text = "Hi, I'm Maithri Karasodi!";
+// var textElement = document.querySelector(".hero-heading");
+// console.log( document.querySelector(".hero-heading"));
+// const text = "Hi, I'm Maithri Karasodi!";
 
-let index = 0;
+// let index = 0;
 
-function typeEffect(){
-    if(index < text.length){
-        textElement.innerHTML = textElement.innerHTML + text.charAt(index);
-        index++;
-        setTimeout(typeEffect,100);
-    }
-}
-if(textElement){
-    typeEffect();
-}else{
-    console.log("it is empty")
-}
+// function typeEffect(){
+//     if(index < text.length){
+//         textElement.innerHTML = textElement.innerHTML + text.charAt(index);
+//         index++;
+//         setTimeout(typeEffect,100);
+//     }
+// }
+// if(textElement){
+//     typeEffect();
+// }else{
+//     console.log("it is empty")
+// }
 
 
     
