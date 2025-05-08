@@ -73,6 +73,8 @@ hr{
  /* navigation */
 
  .navigation{
+    position:sticky;
+    top:0;
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
@@ -126,19 +128,19 @@ hr{
 .hero{
     padding: 2rem;;
 }
-@keyframes hero {
+/* @keyframes hero {
     0%, 100% {top:0px;left : 0px;}
     50% {top:0px;left: 100px;}
-}
+} */
 
 .hero .hero-img{
     max-width: 350px;
     display: block;
     margin: auto;
     position: relative;
-    animation-name: hero;
+    /* animation-name: hero;
     animation-duration: 5s;
-    animation-delay: 2s;
+    animation-delay: 2s; */
 }
 
 .hero .hero-heading{
@@ -204,6 +206,10 @@ hr{
 .space{
     margin-top: 3rem;
 }
+/* contact */
+.contact {
+    text-align: center;
+}
 
 /* footer */
 
@@ -232,6 +238,11 @@ hr{
 .footer .social-link{
     width: 24px;
     height: 24px;
+}
+
+.footer p{
+    text-align: right;
+    font-size: x-small;
 }
 
 

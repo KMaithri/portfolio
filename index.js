@@ -1,8 +1,8 @@
 // Toggle modes
 function myfunction(){
     // console.log("before: "+document.getElementById("mode").src);
-    if(document.querySelector(".icon").src == "images/darkmode.png"){
-        document.querySelector(".icon").src = "images/lightmode.png";
+    if(document.querySelector(".icon").src == "https://maithrikarasodi.netlify.app/images/darkmode.png"){
+        document.querySelector(".icon").src = "https://maithrikarasodi.netlify.app/images/lightmode.png";
         // console.log("after: "+document.getElementById("mode").src);
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
@@ -12,7 +12,7 @@ function myfunction(){
                 nodeList[i].style.color = "white";
             }
     }else{
-        document.querySelector(".icon").src = "images/darkmode.png";
+        document.querySelector(".icon").src = "https://maithrikarasodi.netlify.app/images/darkmode.png";
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
         const nodeList = document.querySelectorAll(".ow");
@@ -23,4 +23,28 @@ function myfunction(){
     }
     
 }
+
+// typewriter effect for title
+const textElement = document.querySelector(".hero-heading");
+// console.log( document.querySelector(".hero-heading"));
+const text = "Hi, I'm Maithri Karasodi, Developer and Designer.";
+// const text = document.write("Hi, I'm Maithri Karasodi, <span class='heading-inverted'>Developer and Designer.</span>");
+
+
+let index = 0;
+
+function typeEffect(){
+    if(index < text.length){
+        textElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect,100);
+    }
+}
+if(textElement){
+    typeEffect();
+}else{
+    console.log("it is empty");
+}
+
+
     
